@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIngle page grid website</title>
+</head>
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #330000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2346DD21'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* main content */
+    .box-hero {
+        width: 47rem;
+        height: 34rem;
+        border: 1px solid wheat;
+        margin: 3rem auto;
+        box-shadow: 2px 2px 20px white, -2px -2px 20px white;
+        position: relative;
+        border-radius: 10px;
+        background-color: #454B1B;
+        animation-name: pulse;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+    }
+
+    .content .short_txt1,
+    .short_txt2 {
+        margin: 1.5rem 3rem;
+    }
+
+    .box-hero .short_txt2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: white
+    }
+
+    .box-hero .short_txt1 {
+        color: #00FF00;
+    }
+
+    .box-hero .box1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1px;
+        grid-row-gap: 0px;
+        border-radius: 10px;
+
+    }
+
+    /* box 1 add here  */
+    .div1 {
+        padding: 2rem;
+        height: 357px;
+        background-color: green;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        border-radius: 10px;
+
+    }
+
+    .div1>h1 {
+        color: white;
+        line-height: 2rem;
+    }
+
+    .div1>.main {
+        line-height: 2.9rem;
+    }
+
+    .div1 .sign_up {
+        width: 18rem;
+        height: .9rem;
+        border: 0px solid transparent;
+        padding: 1.7rem;
+        background-color: greenyellow;
+        color: white;
+        font-size: large;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+
+    /* second div box */
+    .both {
+        background-color: green;
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    @keyframes pulse {
+        from {
+            box-shadow: 3px 9px 20px white;
+            transition: all 0.9s linear;
+        }
+
+        to {
+            box-shadow: -3px -5px -20px white;
+        }
+    }
+</style>
+
+<body>
+    <div class="box-hero">
+        <div class="content">
+            <h1 class="short_txt1">Join our community</h1>
+            <p class="short_txt2">30-day, hassle-free money back guarantee. <br>
+                "Purchasing a domain name is the first step in building your business" overall
+                brand online.</p>
+        </div>
+        <div class="box1">
+            <div class="div1">
+                <h1>Special Offers</h1>
+                <h1 class="main"> Starts at <s> &#36 29</s> <br>&#36 25/yr
+                    <br> on first year
+                </h1>
+                <button class="sign_up">Sign up</button>
+            </div>
+            <div class="div1 both">
+                <h2>Why should buy a domain name</h2>
+                <ul>
+                    <li>To protect copyrights & trademarks</li>
+                    <li>Build creditability</li>
+                    <li>Increase awareness</li>
+                    <li>Domain forwading</li>
+                    <li>Lightning-fast search</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
