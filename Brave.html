@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin &#128640</title>
+</head>
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 16rem;
+        height: 41rem;
+        background-color: black;
+        color: white;
+        position: relative;
+
+    }
+    .container .half_text p{
+       font-size: 2.6rem;
+       font-weight: 600;
+font-family:monospace;
+       position: absolute;
+      left: 4rem;
+      top:4rem
+    }
+    hr{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:11rem;
+    }
+
+
+    .container .half_text .Profile_tab{
+       font-size: 1.2rem;
+       margin: 0rem auto;
+       font-weight: 200;
+       font-family:monospace;
+       position: absolute;
+      left: 4rem;
+      top:12.5rem
+ 
+    }
+    .a{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:15rem;
+    }
+
+    .container .half_text .Add_categories_tab{
+        font-size: 1.2rem;
+       margin: 0rem auto;
+       font-weight: 200;
+       font-family:monospace;
+       position: absolute;
+      left: 2rem;
+      top:17rem
+    }
+    .b{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:20rem;
+    }
+
+
+
+    .container .half_text .Add_Products_tab{
+        font-size: 1.2rem;
+       margin: 0rem auto;
+       font-weight: 200;
+       font-family:monospace;
+       position: absolute;
+      left: 2rem;
+      top:22rem
+    } 
+    .c{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:25rem;
+    }
+    .container .half_text  .View_products_tab{
+        font-size: 1.2rem;
+       margin: 0rem auto;
+       font-weight: 200;
+       font-family:monospace;
+       position: absolute;
+      left: 2rem;
+      top:27rem
+    }
+    .d{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:30rem;
+    }
+    .container .half_text .View_user_tab{
+        font-size: 1.2rem;
+       margin: 0rem auto;
+       font-weight: 200;
+       font-family:monospace;
+       position: absolute;
+      left: 3rem;
+      top:32rem   
+    }
+    .e{color:beige;
+        opacity: .4;
+     width: 15.9rem;
+     position: absolute;
+     top:35rem;
+    }
+
+
+    /* section banner include */
+    .section_banner{
+        background-color: white;
+        color: black;
+        position:relative;
+        top:0;
+        left:16rem;
+        width:69.3rem;
+        height: 41rem;
+    }
+    .section_banner h1{
+        font-family: monospace;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .section_banner .logout_buttoon{
+         color:blue;
+         background-color: white;
+         border: 1px solid blue;
+         padding: .4rem;
+         margin: 0 0 0 63rem;
+    }
+    .section_banner .form{
+        margin: 2em 15rem 0px;
+
+    }
+    .section_banner .form h2{ font-size: 1rem; font-weight: 900; font-family: monospace;}
+    .section_banner .form .main-form{
+       width: 40rem;
+       height:10rem;
+       border: 1px solid blue;
+    }
+    .section_banner .form .main-form >.label{
+      width: 9rem;
+      height: auto;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: monospace;
+      margin: 1rem 1rem .3rem 1rem;
+    }
+    .section_banner .form .main-form >#category_name_who{
+        width: 38.2rem ;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+    .section_banner .form .main-form >.Submit_buttoon{
+        width:38.2rem;
+        height:2rem;
+        margin: 1rem;
+        background-color: blue;
+        border-color: blue;
+        color:white;
+    }
+
+    /* add subcategores  */
+    .section_banner .form .last-form{
+        width: 40rem;
+       height:15.7rem;
+    }
+    .section_banner .form  .last-form>.last-label{
+      width: 11rem;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="half_text">
+        <p>Admin</p> 
+        <hr>
+    <a href="#" style="color:white;">
+        <p class="Profile_tab">Profile</p> 
+     </a>   
+        <hr class="a">
+    <a href="#" style="color:white;">
+        <p class="Add_categories_tab">Add categories</p> 
+    </a>
+        <hr class="b">
+    <a href="#root" style="color:white;">
+        <p class="Add_Products_tab">Add Products</p> 
+     </a>   
+        <hr class="c">
+    <a href="#" style="color:white;">
+        <p class="View_products_tab">View Products</p> 
+     </a>   
+        <hr class="d">
+    <a href="?" target="_blank" style="color:white;">
+        <p class="View_user_tab">View user</p> 
+    </a>    
+        <hr class="e">
+        </div>
+        <div class="section_banner">
+            <h1>Categories</h1>
+            <button  type="button" class="logout_buttoon">Logout</button>
+            <div class="form">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Add categories</h2>
+                <form  class="main-form">
+                    <h3 class="label">Enter a category</h3><br>
+                    <input type="text" name="category_name" id="category_name_who" placeholder="Enter a category"><br>
+                    <button class="Submit_buttoon" >Add a category</button>
+                </form>
+            </div>
+
+            <div class="form">
+                <h2 style="text-align: center; margin-bottom:1rem;">Add Sub-categories</h2>
+                <form  class="main-form  last-form">
+                    <h3 class="label last-label">Choose a category</h3><br>
+                    <input type="text" name="category_name" id="category_name_who" pattern="******"><br>
+                    <h3 class="label last-label">Enter a sub category</h3><br>
+                    <input type="text" name="category_name" id="category_name_who" placeholder="Enter a category"><br>
+                    <button class="Submit_buttoon" >Add a Sub category</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
