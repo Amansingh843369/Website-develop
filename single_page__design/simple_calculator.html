@@ -1,0 +1,155 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/light.css" id="theme" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+<style>
+    
+    /* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+::placeholder {
+  color: rgb(221, 221, 221);
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 19, 19);
+  transition: 0.8s all;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10%;
+  color: #fff;
+}
+.container {
+  width: 300px;
+  
+}
+.result {
+  width: 59.1%;
+}
+input {
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: rgb(47, 51, 50);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  background-color: rgb(47, 51, 50);
+
+  width: 220px;
+}
+input[type="button"]:hover {
+  background-color: rgb(160, 160, 160);
+  color: #fff;
+}
+#clear {
+  color: #fff;
+  background-color: rgb(255, 42, 42);
+}
+button {
+  border: none;
+  background-color: rgb(39, 36, 36);
+  padding: 8px;
+  display: flex;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+</style>
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <h1> Gui Calculator </h1>
+
+      <div class="first-row">
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+        <input type="button" value="C" onclick="clearScreen()" id="clear" />
+      </div>
+      <div class="second-row">
+        <input type="button" value="1" onclick="liveScreen(1)" id="one" />
+        <input type="button" value="2" onclick="liveScreen(2)" id="two" />
+        <input type="button" value="3" id="three" onclick="liveScreen(3)" />
+        <input type="button" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" value="4" id="four" onclick="liveScreen(4)" />
+        <input type="button" value="5" id="five" onclick="liveScreen(5)" />
+        <input type="button" value="6" id="six" onclick="liveScreen(6)" />
+        <input type="button" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="7" id="seven" onclick="liveScreen(7)" />
+        <input type="button" value="8" id="eight" onclick="liveScreen(8)" />
+        <input type="button" value="9" id="nine" onclick="liveScreen(9)" />
+        <input type="button" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="/" onclick="liveScreen('/')" />
+
+        <input type="button" value="0" id="zero" onclick="liveScreen(0)" />
+        <input type="button" value="." class="dot" onclick="liveScreen('.')" />
+        <input type="button" value="=" onclick="result.value = eval(result.value)" />
+      </div>
+     
+      </div>
+    </div>
+  </div>
+  <!-- Fontawesome Script -->
+  <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+<script>
+    
+
+function clearScreen() {
+  document.getElementById("result").value = "00";
+}
+
+
+function liveScreen(value) {
+  let res = document.getElementById("result");
+  if(res.value == "undefined"){
+    res.value = "";
+  }
+  res.value += value;
+}
+</script>
+</body>
+
+</html>
