@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar with Searchbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- doodleipsum link cdn  -->
+  <link rel="stylesheet" href="https://doodleipsum.com/700/hand-drawn?i=9540903bd15e3aa55a295ba4d48d0d17">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #DA22FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .FAQ-container {
+    width: 40rem;
+    height: 20rem;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10rem auto;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2p 2px 10px white;
+    transition: all 0.9s ease-in-out;
+
+  }
+
+  .FAQ-container>div {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+  }
+
+  .FAQ-container h1,
+  details {
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .FAQ-container details {
+    top: 3rem;
+    left: 1rem;
+    color: whitesmoke;
+  }
+
+  .FAQ-container details h3 {
+    color: white;
+  }
+
+  /*  */
+
+  .FAQ-container .aman {
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    top: 6rem;
+    left: 2rem;
+    color: whitesmoke;
+  }
+
+  .FAQ-container .Singh {
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    top: 9rem;
+    left: 3rem;
+    color: white;
+  }
+
+  .FAQ-container .Aman-Singh {
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    top: 12rem;
+    left: 4rem;
+    color: whitesmoke;
+  }
+
+  .FAQ-container .Singh-Aman {
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    top: 15rem;
+    left: 5rem;
+    color: white;
+  }
+
+  details p {
+    color: aqua;
+  }
+
+
+
+  /* media queries for optimised mobile devices */
+  @media screen and (max-width:600px) {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #5433FF;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .FAQ-container {
+      width: 19rem;
+      height: 43rem;
+      background-color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 2rem auto;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 2p 2px 10px white;
+      transition: all 0.9s ease-in-out;
+    }
+
+    .FAQ-container h1,
+    details {
+      position: absolute;
+      margin-left: 3rem;
+      margin-top: 18rem;
+      color: white;
+    }
+
+    .FAQ-container .aman {
+      position: absolute;
+      margin-left: 3rem;
+      margin-top: 18rem;
+      top: 7rem;
+      left: 1rem;
+      color: whitesmoke;
+    }
+
+    .FAQ-container .Singh {
+      position: absolute;
+      margin-left: 3rem;
+      margin-top: 20rem;
+      top: 10rem;
+      left: 1rem;
+      color: white;
+    }
+
+    .FAQ-container .Aman-Singh {
+      position: absolute;
+      margin-left: 3rem;
+      margin-top: 23rem;
+      top: 12rem;
+      left: 1rem;
+      color: whitesmoke;
+    }
+
+    .FAQ-container .Singh-Aman {
+      position: absolute;
+      margin-left: 3rem;
+      margin-top: 25rem;
+      top: 14rem;
+      left: 1rem;
+      color: white;
+    }
+
+  }
+</style>
+
+<body>
+  <div class="FAQ-container">
+    <h1>FAQ</h1>
+    <div style="display:inline-block;position:relative"><img
+        src="https://doodleipsum.com/250x250/hand-drawn?bg=0000ff&i=f09b37d3cf15a00853bdb5d5ed5662d8"
+        alt="Home Office by Leni Kauffman" />
+      <p style="position:absolute;bottom:.5rem;right:.5rem;font-family:sans-serif;color:white"><a
+          href="https://blush.design/artists/0kAMYyZvgLJyWAyj36uL/leni-kauffman"></a></p>
+    </div>
+    <details>
+      <summary>Do you provide additional support?</summary>
+      <p>hellflefij</p>
+    </details>
+    <details class="aman">
+      <summary>How many members cam I invite?</summary>
+      <p>Lorem ipsum dolor sit amet consectetur </p>
+    </details>
+
+    <details class="Singh">
+      <summary>What is a maximum file size upload?</summary>
+      <p>Lorem ipsum dolor sit amet consectetur</p>
+    </details>
+
+    <details class="Aman-Singh">
+      <summary>Can I cancel my subscription?</summary>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </details>
+
+    <details class="Singh-Aman">
+      <summary>How do I reset my password?</summary>
+      <p>Lorem ipsum dolor sit amet consecte </p>
+    </details>
+
+  </div>
+</body>
+
+</html>
