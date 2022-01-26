@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        width: 70rem;
+        height: auto;
+        margin: 2rem auto;
+        border: 1px solid white;
+        box-shadow: 2px 2px 10px orangered, -2px -2px 10px orangered;
+        position: relative;
+
+    }
+
+    .container .text {
+        font-size: 1rem;
+        margin: 9rem 3rem 2rem 5rem;
+    }
+
+    .container .text p {
+        margin-top: 1rem;
+    }
+
+    /* pre-order button */
+    .container .text>.order,
+    .read {
+        border: 1px solid forestgreen;
+        padding: 1rem;
+        background-color: orangered;
+        color: white;
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    /* read button */
+    .container .text .re {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /* image only */
+    .container .img_src .img {
+        width: 21rem;
+        height: 18rem;
+        border-radius: 10px;
+        position: absolute;
+        top: 6rem;
+        left: 43rem;
+    }
+
+    .container .first_image1,
+    .second_image1 {
+        width: 8rem;
+        height: 15em;
+        border: 1px solid black;
+        margin: 2rem 0rem 2rem 5rem;
+        border-radius: 10px;
+    }
+
+    .container .second_image1 {
+        margin: 2rem 1rem 2rem .5rem;
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .container .side_text {
+        position: absolute;
+        top: 28rem;
+        left: 40rem;
+    }
+
+
+    .container .flex {
+        display: flex;
+        margin: 2rem 4rem 2rem 4rem;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+
+    /* claycsss  */
+
+    .card {
+        /* Modify clay.css properties */
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-left: 1rem;
+    }
+
+    .class {
+        word-break: break-all;
+        line-height: 2rem;
+    }
+
+    /*  */
+    .custom-shape-divider-top-1643193301 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1643193301 svg {
+        position: relative;
+        display: block;
+        width: calc(135% + 1.3px);
+        height: 258px;
+    }
+
+    .custom-shape-divider-top-1643193301 .shape-fill {
+        fill: #FF4904;
+    }
+
+    /*  */
+    .custom-shape-divider-bottom-1643193536 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1643193536 svg {
+        position: relative;
+        display: block;
+        width: calc(200% + 1.3px);
+        height: 257px;
+    }
+
+    .custom-shape-divider-bottom-1643193536 .shape-fill {
+        fill: #FF4904;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="custom-shape-divider-top-1643193301">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="text">
+            <h1>TYPEMASTER <br> KEYBOARD</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis <br> doloremque deleniti, ratione
+                deserunt magnam sint dignissimos culpa <br> nostrum fugit?</p>
+            <button class="order">PRE-ORDER NOW</button>
+            <button class="read re">READ MORE</button>
+        </div>
+        <div class="img_src">
+            <img src="/keyboard.jpg" alt="" class="img">
+        </div>
+        <div class="first_image">
+            <img src="/key.jpg" alt="" class="first_image1">
+            <img src="https://images.unsplash.com/photo-1573643808568-4a3c26f3a06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                alt="" class="second_image1">
+        </div>
+        <div class="side_text">
+            <h1>MECHANICAL <br> WIRELESS <br> KEYBOARD</h1>
+            <P>Lorem ipsum dolor sit <br>amet consectetur adipisicing elit. Veniam quis eaque <br> obcaecati?
+                Distinctio, praesentium.
+            </P>
+        </div>
+        <div class="flex">
+            <!-- <img src="https://img.icons8.com/ios/50/000000/medium-battery--v2.png"/> -->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 172 172"
+                style=" fill:#fa314a;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <path
+                        d="M55.1432,145.34c-15.73084,0 -28.4832,-12.75236 -28.4832,-28.4832v-61.7136c0,-15.73084 12.75236,-28.4832 28.4832,-28.4832h61.7136c15.73084,0 28.4832,12.75236 28.4832,28.4832v61.7136c0,15.73084 -12.75236,28.4832 -28.4832,28.4832z"
+                        fill="#ff4500"></path>
+                    <g fill="#000000">
+                        <path
+                            d="M48.35846,56.76c-6.18538,0 -11.24615,5.06077 -11.24615,11.24615v35.98769c0,6.18538 5.06077,11.24615 11.24615,11.24615h71.97538c6.18538,0 11.24615,-5.06077 11.24615,-11.24615v-6.74769h4.49846c1.23883,0 2.24923,-1.0104 2.24923,-2.24923v-17.99385c0,-1.23883 -1.0104,-2.24923 -2.24923,-2.24923h-4.49846v-6.74769c0,-6.18538 -5.06077,-11.24615 -11.24615,-11.24615zM48.35846,61.25846h71.97538c3.75165,0 6.74769,2.99605 6.74769,6.74769v8.99692c0,1.23883 1.0104,2.24923 2.24923,2.24923h4.49846v13.49538h-4.49846c-1.23883,0 -2.24923,1.0104 -2.24923,2.24923v8.99692c0,3.75165 -2.99605,6.74769 -6.74769,6.74769h-71.97538c-3.75165,0 -6.74769,-2.99605 -6.74769,-6.74769v-35.98769c0,-3.75165 2.99605,-6.74769 6.74769,-6.74769zM48.1476,65.68663c-0.09665,0.01757 -0.19329,0.04393 -0.28115,0.07029c-1.04554,0.23722 -1.78357,1.17733 -1.75721,2.24923v35.98769c-0.00879,0.80832 0.41295,1.56392 1.11583,1.97686c0.70288,0.40416 1.56392,0.40416 2.2668,0c0.70288,-0.41294 1.12462,-1.16855 1.11583,-1.97686v-35.98769c0.02636,-0.65017 -0.23722,-1.27398 -0.70288,-1.71328c-0.47445,-0.44809 -1.11583,-0.66774 -1.75721,-0.60624zM57.14452,65.68663c-0.09665,0.01757 -0.19329,0.04393 -0.28115,0.07029c-1.04554,0.23722 -1.78357,1.17733 -1.75721,2.24923v35.98769c-0.00879,0.80832 0.41295,1.56392 1.11583,1.97686c0.70288,0.40416 1.56392,0.40416 2.2668,0c0.70288,-0.41294 1.12462,-1.16855 1.11583,-1.97686v-35.98769c0.02636,-0.65017 -0.23722,-1.27398 -0.70288,-1.71328c-0.47445,-0.44809 -1.11583,-0.66774 -1.75721,-0.60624zM66.14144,65.68663c-0.09665,0.01757 -0.19329,0.04393 -0.28115,0.07029c-1.04554,0.23722 -1.78357,1.17733 -1.75721,2.24923v35.98769c-0.00879,0.80832 0.41295,1.56392 1.11583,1.97686c0.70288,0.40416 1.56392,0.40416 2.2668,0c0.70288,-0.41294 1.12462,-1.16855 1.11583,-1.97686v-35.98769c0.02636,-0.65017 -0.23722,-1.27398 -0.70288,-1.71328c-0.47445,-0.44809 -1.11583,-0.66774 -1.75721,-0.60624zM75.13837,65.68663c-0.09665,0.01757 -0.19329,0.04393 -0.28115,0.07029c-1.04554,0.23722 -1.78357,1.17733 -1.75721,2.24923v35.98769c-0.00879,0.80832 0.41295,1.56392 1.11583,1.97686c0.70288,0.40416 1.56392,0.40416 2.2668,0c0.70288,-0.41294 1.12462,-1.16855 1.11583,-1.97686v-35.98769c0.02636,-0.65017 -0.23722,-1.27398 -0.70288,-1.71328c-0.47445,-0.44809 -1.11583,-0.66774 -1.75721,-0.60624z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <path
+                        d="M54.9712,156.52c-21.81039,0 -39.4912,-17.68081 -39.4912,-39.4912v-62.0576c0,-21.81039 17.68081,-39.4912 39.4912,-39.4912h62.0576c21.81039,0 39.4912,17.68081 39.4912,39.4912v62.0576c0,21.81039 -17.68081,39.4912 -39.4912,39.4912z"
+                        fill="#ff4500"></path>
+                    <g fill="#3f51b5">
+                        <path
+                            d="M78.38542,139.57083v-42.39083l-16.77,16.77l-6.52167,-6.52167l21.42833,-21.42833l-21.19542,-21.19542l6.52167,-6.52167l16.53708,16.53708v-42.39083l34.9375,30.27917l-23.7575,23.29167l23.7575,23.29167zM87.70208,97.18v22.59292l11.87875,-10.71417zM87.70208,52.22708v22.59292l11.87875,-11.87875z">
+                        </path>
+                    </g>
+                    <path
+                        d="M52.1504,156.52c-20.2525,0 -36.6704,-16.4179 -36.6704,-36.6704v-67.6992c0,-20.2525 16.4179,-36.6704 36.6704,-36.6704h67.6992c20.2525,0 36.6704,16.4179 36.6704,36.6704v67.6992c0,20.2525 -16.4179,36.6704 -36.6704,36.6704z"
+                        fill="none"></path>
+                    <path
+                        d="M55.5904,153.08c-20.2525,0 -36.6704,-16.4179 -36.6704,-36.6704v-60.8192c0,-20.2525 16.4179,-36.6704 36.6704,-36.6704h60.8192c20.2525,0 36.6704,16.4179 36.6704,36.6704v60.8192c0,20.2525 -16.4179,36.6704 -36.6704,36.6704z"
+                        fill="none"></path>
+                </g>
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <path
+                        d="M40.1448,159.96c-15.52185,0 -28.1048,-12.58295 -28.1048,-28.1048v-91.7104c0,-15.52185 12.58295,-28.1048 28.1048,-28.1048h91.7104c15.52185,0 28.1048,12.58295 28.1048,28.1048v91.7104c0,15.52185 -12.58295,28.1048 -28.1048,28.1048z"
+                        fill="#ff4500"></path>
+                    <g>
+                        <path
+                            d="M137.6,134.73333c0,1.58527 -1.2814,2.86667 -2.86667,2.86667h-97.46667c-1.5824,0 -2.86667,-1.2814 -2.86667,-2.86667v-25.8h103.2z"
+                            fill="#cfd8dc"></path>
+                        <path d="M34.4,34.4h103.2v74.53333h-103.2z" fill="#546e7a"></path>
+                        <path d="M40.13333,40.13333h91.73333v60.2h-91.73333z" fill="#bbdefb"></path>
+                        <path
+                            d="M123.26667,117.53333c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0,3.16643 2.5669,5.73333 5.73333,5.73333c3.16643,0 5.73333,-2.5669 5.73333,-5.73333c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"
+                            fill="#ff1744"></path>
+                        <path d="M43,120.4h51.6v5.73333h-51.6z" fill="#78909c"></path>
+                    </g>
+                </g>
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <path
+                        d="M41.108,160.82c-16.52878,0 -29.928,-13.39922 -29.928,-29.928v-89.784c0,-16.52878 13.39922,-29.928 29.928,-29.928h89.784c16.52878,0 29.928,13.39922 29.928,29.928v89.784c0,16.52878 -13.39922,29.928 -29.928,29.928z"
+                        fill="#ff4500"></path>
+                    <g>
+                        <path
+                            d="M86,23.29167c-31.66433,0 -57.33333,25.66901 -57.33333,57.33333c0,31.66433 25.66901,57.33333 57.33333,57.33333c31.66433,0 57.33333,-25.66901 57.33333,-57.33333c0,-31.66433 -25.66901,-57.33333 -57.33333,-57.33333z"
+                            fill="#fff59d"></path>
+                        <path
+                            d="M123.26667,80.625c0,-22.07333 -18.92,-39.56 -41.56667,-36.98c-17.2,2.00667 -30.96,15.76667 -32.68,32.96667c-1.43333,13.18667 4.01333,24.94 13.18667,32.39333c4.01333,3.44 6.59333,8.31333 6.59333,13.76v0.86h34.4v-0.28667c0,-5.16 2.29333,-10.32 6.30667,-13.76c8.31333,-6.88 13.76,-17.2 13.76,-28.95333z"
+                            fill="#fbc02d"></path>
+                        <path
+                            d="M104.92,75.465l-8.6,-5.73333c-0.86,-0.57333 -2.29333,-0.57333 -3.15333,0l-7.16667,4.58667l-6.88,-4.58667c-0.86,-0.57333 -2.29333,-0.57333 -3.15333,0l-8.6,5.73333c-0.57333,0.57333 -1.14667,1.14667 -1.14667,2.00667c0,0.86 0,1.72 0.57333,2.29333l10.89333,13.47333v30.38667h5.73333v-31.53333c0,-0.57333 -0.28667,-1.14667 -0.57333,-1.72l-9.46,-11.75333l4.3,-2.86667l6.88,4.58667c0.86,0.57333 2.29333,0.57333 3.15333,0l6.88,-4.58667l4.3,2.86667l-9.46,11.75333c-0.28667,0.57333 -0.57333,1.14667 -0.57333,1.72v31.53333h5.73333v-30.38667l10.89333,-13.47333c0.57333,-0.57333 0.86,-1.43333 0.57333,-2.29333c-0.28667,-0.86 -0.57333,-1.72 -1.14667,-2.00667z"
+                            fill="#fff59d"></path>
+                        <path
+                            d="M86,135.09167c-4.74965,0 -8.6,3.85035 -8.6,8.6c0,4.74965 3.85035,8.6 8.6,8.6c4.74965,0 8.6,-3.85035 8.6,-8.6c0,-4.74965 -3.85035,-8.6 -8.6,-8.6z"
+                            fill="#5c6bc0"></path>
+                        <path
+                            d="M91.73333,146.55833h-11.46667c-6.30667,0 -11.46667,-5.16 -11.46667,-11.46667v-14.33333h34.4v14.33333c0,6.30667 -5.16,11.46667 -11.46667,11.46667z"
+                            fill="#9fa8da"></path>
+                        <path
+                            d="M103.2,135.09167l-33.25333,4.58667c0.86,2.00667 2.58,4.01333 4.58667,5.16l26.94667,-3.72667c1.14667,-1.72 1.72,-3.72667 1.72,-6.02zM68.8,128.49833v5.73333l34.4,-4.87333v-5.73333z"
+                            fill="#5c6bc0"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="card">
+            <div class="class">
+                <h4> HIGH CAPACITY BATTERY</h4>
+                <p>Lorem ipsum dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! Lorem ipsum <br> dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! </p>
+            </div>
+            <div class="class">
+                <h4>WIRELESS WITH BLUETOOTH </h4>
+                <p>Lorem ipsum dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! Lorem ipsum <br> dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! </p>
+            </div>
+            <div class="class">
+                <h4> HIGHLY COMPATIBLE</h4>
+                <p>Lorem ipsum dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! Lorem ipsum <br> dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! </p>
+            </div>
+            <div class="class">
+                <h4>RGB BACKLIT MODE</h4>
+                <p>Lorem ipsum dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! Lorem ipsum <br> dolor sit amet <br> adipisicing elit. Soluta, <br>
+                    consectetur! </p>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1643193536">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer" style="text-align: center; font-weight: 900;">
+            <p>Aman Singh 2022 | All Rights Reserved</p>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
