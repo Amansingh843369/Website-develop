@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie_policy</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.9s linear;
+    }
+
+    .container {
+        width: 31rem;
+        height: 17rem;
+        border: 2px solid rebeccapurple;
+        margin: 10rem 0 0 23rem;
+        position: relative;
+        background-color: orange;
+
+    }
+
+    .container .section-image>img {
+        width: 31%;
+        height: 50%;
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-color: orange;
+    }
+
+    .container .content {
+        width: 19rem;
+        height: auto;
+        float: right;
+        margin-top: 1rem;
+        font-size: larger;
+        font-family: cursive;
+    }
+
+    .myButton {
+        background-color: red;
+        box-shadow: 3px 6px 1px black;
+        border-radius: 5px;
+        border: 1px solid #337bc4;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 12px;
+        margin-left: 1rem;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #528ecc;
+        position: absolute;
+        bottom: 1.7rem;
+    }
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+        background-color: orange;
+    }
+
+    .container h2 {
+        text-align: center;
+        color: white;
+        line-height: 4rem;
+    }
+
+
+    /* Media queries start here */
+    @media screen and (max-width:500px) {
+        .container {
+            width: 20rem;
+            height: 30rem;
+            border: 2px solid rebeccapurple;
+            margin: 5rem 0 0 5rem;
+            position: relative;
+            background-color: orange;
+        }
+
+        .container .section-image>img {
+            width: 80%;
+            height: 30%;
+            margin-top: -0rem;
+            margin-left: 0.8rem;
+
+        }
+
+        .container .content>h2 {
+            text-align: center;
+            margin-top: 10rem;
+
+        }
+
+        .container .myButton {
+            background-color: red;
+            box-shadow: 3px 6px 1px black;
+            border-radius: 5px;
+            border: 1px solid #337bc4;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 19px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0.8rem;
+        }
+
+
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="section-image">
+            <img src="/Cookie_policy_page/cookies.png" alt="Cookies " title="cookies is part of life">
+        </div>
+
+        <div class="content">
+            <h2>Our Cookie Policy</h2>
+            We use cookies to ensure that we give you the best experience on our website You must accept our policy in
+            order to use all of the features on our website. To find out more <a href=""
+                style="color:springgreen;">Click here</a> .
+        </div>
+
+        <a href="?" class="myButton">Okay, got it</a>
+    </div>
+</body>
+
+</html>
