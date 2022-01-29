@@ -1,120 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <!-- google font ----Poppins -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap" rel="stylesheet">
-   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap"
+      rel="stylesheet">
+   <title>Facebook</title>
 </head>
 <style type="text/css">
-   *{
+   * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
    }
-   body{background-color: #fff; unicode-bidi:embed;}
-  .container{
-    background-color: #f0f2f5;  
-    width:85rem;
-    height:41rem ;
-    position: relative;
-  }
-  .container h1{
-     position: absolute;
-     margin: 13rem 2rem  4rem 12rem;
-     color:blue;
-     font-size: 4rem;
-     font-weight: 900;
-     font-family: 'Poppins', sans-serif;
-   }
-  .fb-1{color:inherit; line-height: 2rem;    position: absolute;    margin: 18rem 2rem  4rem 12rem; font-size: 2rem;}
-  /* form styling herr */
 
-   form{
+   body {
+      background-color: #fff;
+      unicode-bidi: embed;
+   }
+
+   /* headings style here */
+   .container {
+      background-color: #f0f2f5;
+      width: 85rem;
+      height: 41rem;
+      position: relative;
+   }
+
+   .container h1 {
       position: absolute;
-      top:8.4rem;
-      left:48rem;
+      margin: 12rem 2rem 4rem 12rem;
+      color: #1877f2;
+      font-size: 4rem;
+      font-weight: 900;
+      font-family: 'Poppins', sans-serif;
+   }
+
+   .fb-1 {
+      color: inherit;
+      line-height: 2rem;
+      position: absolute;
+      margin: 18rem 2rem 4rem 12rem;
+      font-size: 2rem;
+   }
+
+   /* form styling here */
+
+   form {
+      position: absolute;
+      top: 8.4rem;
+      left: 48rem;
       width: 25rem;
-      border:1px solid  #dddfe2;
+      border: 1px solid #dddfe2;
       padding: 1rem;
-      background-color:#fff;
+      background-color: #fff;
       border-radius: 10px;
       color: #1d2129;
-      /* box-shadow: 1px 1px 7px white,-1px -1px 0px white; */
    }
-   form > .email-txt,.pass-txt,.button-log,.create_acc{
-    width: 22rem;
-    height: 3rem;
-    padding: 1rem;
-    margin: .6rem;
-    border-radius: 6px;
-    border: 1px solid black;
-    font-size: 1rem;
+
+   form>.email-txt,
+   .pass-txt,
+   .button-log,
+   .create_acc {
+      width: 22rem;
+      height: 3rem;
+      padding: 1rem;
+      margin: .6rem;
+      border-radius: 6px;
+      font-size: 1rem;
    }
-   form > .forget-pass{text-align: center; margin: 1rem 0; color: blue;}
-  form >.button-log{color:white; background-color: blue; font-size: 1rem; font-weight: bold;}
-  form> .create_acc{
-    width:12rem;height: 3rem;background-color:  green;color: #fff;
-    margin-left: 5rem; margin-top: 1rem; font-weight: bold;
-  }
-  .last_page{  
-    position: absolute;
-      top:33rem;
-      left:51rem;}
+
+   /* input type style here */
+   input[type=text]:hover {
+      border: 2px solid #1877f2;
+   }
+
+   form>.forget-pass {
+      text-align: center;
+      margin: 1rem 0;
+      color: #1877f2;
+   }
+
+   form>.button-log {
+      color: white;
+      background-color: #1877f2;
+      font-size: 1rem;
+      font-weight: bold;
+   }
+
+   /* button style here */
+   form>.create_acc {
+      width: 12rem;
+      height: 3rem;
+      background-color: green;
+      color: #fff;
+      margin-left: 5rem;
+      margin-top: 1rem;
+      font-weight: bold;
+   }
+
+   /* create a brand style here */
+   .last_page {
+      position: absolute;
+      top: 33rem;
+      left: 51rem;
+   }
 
 
-      /*media  queies  here */
-      @media screen and (max-width:500px) {
-         body{background-color: #fff; unicode-bidi:embed;}
-  .container{
-    background-color: #f0f2f5;  
-    width:80rem;
-    height:20rem ;
-    position: relative;
-  }
-  .container h1{
-     position: absolute;
-     margin: 5rem 2rem  4rem  5rem;
-     color:blue;
-     font-size: 2rem;
-     font-weight: 900;
-     font-family: 'Poppins', sans-serif;
-   }
-  .fb-1{color:inherit; line-height: 2rem;    position: absolute;    margin: 10rem 2rem  4rem 5rem; font-size: 2rem;}
-
+   /****media  queries  here ***/
+   @media screen and (max-width:500px) {
+      body {
+         background-color: #fff;
+         unicode-bidi: embed;
       }
+
+      .container {
+         background-color: #f0f2f5;
+         width: 30.2rem;
+         height: 50rem;
+         position: relative;
+      }
+
+      .container h1 {
+         position: absolute;
+         margin: 3rem 2rem 4rem 6rem;
+         color: #1877f2;
+         font-size: 3srem;
+         font-weight: 900;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .fb-1 {
+         color: inherit;
+         line-height: 2rem;
+         font-family: serif;
+         position: absolute;
+         margin: 9rem 2rem 4rem 4rem;
+         font-size: 2rem;
+      }
+
+      br {
+         display: none;
+      }
+
+      form {
+         position: absolute;
+         top: 17rem;
+         left: 3rem;
+         right: 3rem;
+         width: 25rem;
+         border: 1px solid #dddfe2;
+         padding: 1rem;
+         background-color: #fff;
+         border-radius: 10px;
+         color: #1d2129;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      input:focus {
+         border: 1px solid #1877f2;
+      }
+
+      .last_page {
+         position: absolute;
+         top: 41.5rem;
+         left: 5.5rem;
+      }
+
+
+   }
 </style>
+
 <body>
-    <div class="container">
-       <h1>facebook</h1>
-       <p class="fb-1">Facebook helps you connect and share  <br> with the people in your life.</p>
+   <div class="container">
+      <h1>facebook</h1>
+      <p class="fb-1 ">Facebook helps you connect and share <br> with the people in your life.</p>
 
-       <form action="">
-        <input type="text " placeholder="Email addreses or phone number" class="email-txt"><br>
-        <input type="text" placeholder="Password" class="pass-txt"><br>
+      <form action="#">
+         <input type="text" placeholder="Email addreses or phone number" class="email-txt"><br>
+         <input type="text" placeholder="Password" class="pass-txt"><br>
          <input type="button" value="Log in" class="button-log"><br>
-             <p class="forget-pass">Forgotten password?</p>
-        <hr>
-        <input type="button" value="Create New Account" class="create_acc"><br>
-       </form>
-       <p class="last_page"> <b>Create a Page</b>  for a celebrity, brand or business.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-   
+         <p class="forget-pass">Forgotten password?</p>
+         <hr>
+         <input type="button" value="Create New Account" class="create_acc"><br>
+      </form>
+      <p class="last_page"> <b>Create a Page</b> for a celebrity, brand or business.</p>
+   </div>
 </body>
+
 </html>
