@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 85.3rem;
+        height: 40rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 2px;
+    }
+
+    .grid-item {
+        background-color: white;
+        border: .1px solid #333;
+        padding: 9px;
+        /*  padding  */
+        font-size: 30px;
+    }
+
+    /* 1st container  view  */
+    .container .first {
+        padding: 5rem;
+        width: 20rem;
+        line-height: 50px;
+        font-size: 1rem;
+        font-weight: bolder;
+        position: relative;
+
+    }
+
+    .container .second {
+        width: 40rem;
+        height: 69rem;
+        font-size: 1rem;
+        font-weight: bolder;
+        position: relative;
+
+    }
+
+    .container .third {
+        width: 25.1rem;
+    }
+
+    .first .jack,
+    .explore,
+    .Notify,
+    .message,
+    .bookmark,
+    .Lists,
+    .Profile,
+    .more {
+        word-spacing: 1rem;
+    }
+
+    .first .jack .fr-1 {
+        color: #1DA1F2;
+        text-decoration: none;
+    }
+
+    .first .fr-2,
+    .fr-3,
+    .fr-4,
+    .fr-5,
+    .fr-6,
+    .fr-7,
+    .fr-8 {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* inner styling here  grid-iten first */
+    .container .first .btn-primary {
+        margin: 1rem auto;
+        padding: 0;
+        min-width: 220px;
+        background-color: #1DA1F2;
+        font-family: sans-serif, Arial;
+        border-radius: 50px;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease-in-out;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        left: 4rem;
+    }
+
+    .first .btn-primary:hover {
+        background-color: rgb(29, 161, 242);
+    }
+
+
+
+    /* 2nd cotainer view  */
+    .second h1 {
+        padding: .2rem 0px;
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    .second .images {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100px;
+        margin: .9rem 0 1rem 0rem;
+        object-fit: cover;
+    }
+
+    .second h2 {
+        color: #333;
+        opacity: .6;
+        font-size: 1rem;
+        position: absolute;
+        left: 6rem;
+        top: 6rem;
+    }
+
+    .second .btn-primary {
+
+        min-width: 75px;
+        background-color: #1DA1F2;
+        font-family: sans-serif, Arial;
+        font-weight: bold;
+        border-radius: 50px;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease-in-out;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        top: 8.5rem;
+        left: 34rem;
+    }
+
+    hr {
+        color: gray;
+        background-color: grey;
+    }
+
+    .second .images1,
+    .images2 {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100px;
+        margin: .9rem 0 1rem 0rem;
+        object-fit: cover;
+    }
+
+    .second .h1-head,
+    .h3-head {
+        padding: 1rem 0px;
+        font-size: 1rem;
+        font-weight: 200;
+        position: absolute;
+        left: 6rem;
+        top: 13rem;
+        color: black;
+    }
+
+    .second .h1-head>span {
+        font-size: 1rem;
+        left: 6rem;
+        color: #333;
+    }
+
+    .second .h3-head {
+        position: absolute;
+        left: 6rem;
+        top: 14.5rem;
+    }
+
+    .second .first {
+        position: absolute;
+        top: 20rem;
+    }
+
+    .second .header-xyz {
+        position: absolute;
+        top: 23rem;
+    }
+
+    .second>.big .images3 {
+        width: 30rem;
+        height: 13rem;
+        margin-left: 5rem;
+        border-radius: 10px;
+        /* margin-bottom: 2rem; */
+
+    }
+
+
+
+
+
+
+    /* 3rd container view */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        border-radius: 50px;
+    }
+
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        border-radius: 50px;
+
+    }
+
+    form.example button:hover {
+        background: #0b7dda;
+    }
+
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* container-nbox */
+    .container .third .container-box {
+        width: 22rem;
+        height: 15rem;
+        /* font-size: 1rem; */
+        margin: 1rem 1rem;
+        border: 1px solid gray;
+
+        border-radius: 10px;
+    }
+
+    .container .third .h3-class,
+    .h2-class {
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin: .5rem 0;
+    }
+
+    .container .third .h2-class {
+        margin: 0 0;
+        font-size: 1.2rem;
+    }
+
+    .container .third p {
+        font-size: 1rem;
+    }
+
+    .container .third .box {
+        border: 1px solid #333;
+        width: 20rem;
+        height: auto;
+        padding: .5rem;
+        margin: .5rem;
+        border-radius: 10px;
+    }
+
+    .container .third .box>h6 {
+        font-size: 1rem;
+    }
+
+
+
+
+    /* third  flex-column*/
+    .container .third .boxex,
+    .boxex-popup {
+        padding: 10px;
+        width: 22rem;
+        height: 11rem;
+
+    }
+
+    .container .third .boxex-popup {
+        height: 25rem;
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+        <div class="grid-item first">
+            <span style="font-size: 2em; color:#1DA1F2;" class="Twitter_logo">
+                <h4><i class="fab fa-twitter"></i> <a href="#" class="fr-1"></a></h4>
+            </span>
+            <span style="font-size: 1em; color:#1DA1F2;" class="jack">
+                <h4><i class="fas fa-home"></i> <a href="#" class="fr-1">Home</a></h4>
+            </span>
+            <span style="font-size: 1em; color: #333;" class="explore">
+                <h4> <i class="fas fa-hashtag"></i> <a href="#" class="fr-2">Explore</a></h4>
+            </span>
+            <span style="font-size: 1em; color: black;" class="Notify">
+                <h4> <i class="far fa-bell"></i> <a href="#" class="fr-3">Notifications</a></h4>
+            </span>
+            <span style="font-size: 1em; color: black;" class="message">
+                <h4><i class="far fa-envelope"></i> <a href="#" class="fr-4">Messages</a></h4>
+            </span>
+
+            <span style="font-size: 1em; color: black;" class="bookmark">
+                <h4><i class="far fa-bookmark"></i> <a href="#" class="fr-5">Bookmarks</a></h4>
+            </span>
+
+            <span style="font-size: 1em; color: black;" class="Lists">
+                <h4> <i class="far fa-list-alt"></i> <a href="#" class="fr-6">Lists</a></h4>
+            </span>
+            <span style="font-size: 1em; color: black;" class="Profile">
+                <h4><i class="far fa-user-circle"></i> <a href="#" class="fr-7">Profile</a></h4>
+            </span>
+            <span style="font-size: 1em; color: black;" class="more">
+                <h4><i class="far fa-comment-dots"></i> <a href="#" class="fr-8">More</a></h4>
+            </span>
+
+            <button class="btn-primary">Tweet</button>
+        </div>
+
+
+
+
+        <div class="grid-item second">
+            <h1>Home</h1>
+            <hr>
+            <img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwcHJvZmlsZSUyMHByZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" class="images">
+            <h2>What's happening ?</h2>
+            <span style="font-size: 2.2em; color: blue; display: inline-block; margin-left: 1rem;" class="ave">
+                <h6><i class="fal fa-image"></i></h6>
+            </span>
+            <span style="font-size: 2em; color: blue; display: inline-block;" class="none">
+                <h6><i class="far fa-smile" style=" margin-left: .5rem"></i></h6>
+            </span>
+            <span style="font-size: 2.2em; color: blue; display: inline-block;" class="all">
+                <h6><i class="fab fa-drupal" style=" margin-left: .5rem; margin-top:.5rem ; "></i></h6>
+            </span>
+
+            <button class="btn-primary">Tweet</button>
+            <br><br><br>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2ZpbGUlMjBwcm9mZXNzaW9uYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" class="images1">
+            <h1 class="h1-head"> <b>Brie</b><span>@Sketch_ComedyFan .3m</span></h1>
+            <h3 class="h3-head">Giving standup comedy a go. Open mic starts at 7 , if you want ticket <e
+                    style="color: #1DA1F2;">#heregoesnothing</e>
+            </h3>
+
+            <span style="font-size: 2.2em; color:#333; display: inline-block;" class="none">
+                <h6><i class="fas fa-comment-alt" style="position: relative; top: 2rem; left: 1rem;"> 10</i></h6>
+            </span>
+            <span style="font-size: 2.2em; color: red; display: inline-block;" class="none">
+                <h6><i class="fas fa-heart-circle" style="position: relative; top: 2rem; left: 5rem;"> 2</i></h6>
+            </span>
+            <span style="font-size: 2.2em; color:blue; display: inline-block;" class="none">
+                <h6><i class="fas fa-thumbs-up" style="position: relative; top: 2rem; left: 10rem;"> 99</i></h6>
+            </span>
+
+            <span style="font-size: 2.2em; color:#2196F3 ; display: inline-block;" class="none">
+                <h6><i class="fas fa-cloud-upload-alt" style="position: relative; top: 2rem; left: 17rem;"> 15</i></h6>
+            </span>
+
+
+            <br><br><br>
+            <hr>
+            <img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwcHJvZmlsZSUyMHByZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" class="images2">
+            <h1 class="h1-head first"> <b>Aman</b><span>@Singhaman . 10m </span></h1>
+            <h3 class="h3-head  header-xyz">Have a wonderful day!</h3>
+            <div class="big">
+                <img class="images3"
+                    src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+                <span style="font-size: 2.2em; color:#333; display: inline-block;" class="">
+                    <h6><i class="fas fa-comment-alt"
+                            style="position: relative; top: 2rem; left: 0rem; margin-left: 5rem;">15</i></h6>
+                </span>
+                <span style="font-size: 2.2em; color: red; display: inline-block;" class="none">
+                    <h6><i class="fas fa-heart-circle" style="position: relative; top: 2rem; left: 5rem;"> 20</i></h6>
+                </span>
+                <span style="font-size: 2.2em; color:blue; display: inline-block;" class="none">
+                    <h6><i class="fas fa-thumbs-up" style="position: relative; top: 2rem; left: 10rem;"> 69</i></h6>
+                </span>
+
+                <span style="font-size: 2.2em; color:#2196F3 ; display: inline-block;" class="none">
+                    <h6><i class="fas fa-cloud-upload-alt" style="position: relative; top: 2rem; left: 17rem;"> 20</i>
+                    </h6>
+                </span>
+            </div>
+            <br><br>
+            <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=671&q=80"
+                alt="" class="images2">
+            <h1 class="h1-head first"> <b>Aman</b><span>@Singhaman . 10m </span></h1>
+            <h3 class="h3-head  header-xyz">Have a wonderful day!</h3>
+            <div class="big">
+                <img class="images3"
+                    src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <span style="font-size: 2.2em; color:#333; display: inline-block;" class="">
+                    <h6><i class="fas fa-comment-alt"
+                            style="position: relative; top: 2rem; left: 0rem; margin-left: 5rem;">4</i></h6>
+                </span>
+                <span style="font-size: 2.2em; color: red; display: inline-block;" class="none">
+                    <h6><i class="fas fa-heart-circle" style="position: relative; top: 2rem; left: 5rem;"> 1</i></h6>
+                </span>
+                <span style="font-size: 2.2em; color:blue; display: inline-block;" class="none">
+                    <h6><i class="fas fa-thumbs-up" style="position: relative; top: 2rem; left: 10rem;"> 100</i></h6>
+                </span>
+
+                <span style="font-size: 2.2em; color:#2196F3 ; display: inline-block;" class="none">
+                    <h6><i class="fas fa-cloud-upload-alt" style="position: relative; top: 2rem; left: 17rem;"> 40</i>
+                    </h6>
+                </span>
+            </div>
+        </div>
+
+
+
+
+        <div class="grid-item third">
+
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="container-box">
+                <h2 class="h3-class">Trends for you</h2>
+                <hr>
+                <p>Trending worldwide</p>
+                <h2 class="h2-class">#BreakingNews</h2>
+                <div class="box">
+                    <p>Space</p>
+                    <h6>Lunar photography improves experience discover moon </h6>
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <p style="margin-left: .5rem;">10,094 people are Tweeting about this</p>
+
+            </div>
+            <div class="container-box  boxex">
+                <p>Trending worldwide</p>
+                <h2 class="h2-class">#BreakingNews</h2>
+                <div class="box">
+                    <p style="margin-bottom: .4rem;">Technology</p>
+                    <h6>No-Code Database Driven Web Development Software</h6>
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <p style="margin-left: .5rem;">1,274 people are Tweeting about this</p>
+
+            </div>
+
+            <div class="container-box  boxex-popup">
+                <p>Trending worldwide</p>
+                <h2 class="h2-class">#BreakingNews</h2>
+                <div class="box">
+                    <p style="margin-bottom: .4rem;">Market Buzz</p>
+                    <h6>Cryptocurrency prices Today:Gllobal trading volume skyrockets over 100,000%,Bitcoin gains 1.53%
+                    </h6>
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <p style="margin-left: .5rem; margin-bottom: .4rem;"> 7,893 people are Tweeting about this</p>
+                <hr>
+                <p style="margin-left: .4rem;"> Trending worldwide</p>
+                <h2 class="h2-class">#BreakingNews</h2>
+                <div class="box">
+                    <p style="margin-bottom: .4rem;">Animals</p>
+                    <h6>These cats are ready for #internationalCatDay</h6>
+                </div>
+                <p style="margin-left: .5rem;"> 7,893 people are Tweeting about this</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
