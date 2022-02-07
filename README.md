@@ -1,3 +1,3 @@
 # Website-develop
-My Awesome websites  listed here 
+My Awesome websites  list here 
 
