@@ -1,0 +1,156 @@
+<html>
+<head><title>login form</title>
+  <meta http-equiv="refresh" content="60">
+  <meta name="description" content="A blog about programming languages">
+  <meta name="keywords" content="HTML,CS,JS">
+  <meta name="author" content="Aman-singh">
+  <meta name="viewport" content="width-device-width, intial-scale=1"> 
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="F:\fontawesome-free-5.15.1-web\css\all.css">
+ <link rel="stylesheet"  href="style.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sophia">
+  
+  
+</head>
+<style>
+ 
+
+
+
+
+li::first-letter{
+ font-family: Lucida Calligraphy; 
+ font-size: 1cm;  
+color: purple;  
+text-shadow: 2px 2px 2px  red;  
+
+}
+ ul li::selection{
+background-color: pink;
+
+
+}
+div
+{
+width:200px;
+height:200px;
+animation:demo 16s ease-in infinite, trans 16s ease-in-out infinite;
+animation-play-state: paused;
+border-radius:40px;
+cursor:progress;
+}
+
+@keyframes demo
+{
+ 0% {background:black;}
+ 50% {background:yellow; width:100px; height:100px;}
+ 100% {background:green; width:300px; height:300px;}
+ 100% {background:purple; width:300px; height:300px;}
+
+  
+
+
+}
+@keyframes trans
+{
+ 0% {transform:translate(0px) scale(1.2) hue-rotate(0deg);}
+ 50% {transform:translate(250px) scale(1) rotate(0deg);}
+ 100% {transform:translate(px) scale(1) rotate(0deg);}
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ background:url(t.jpg);
+ background-size: cover;
+ background-position: center;
+ font-family: sans-serif;
+}
+.logininbox{
+  width: 320px;
+  height:420px;
+  background: white;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar{
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ position: absolute;
+top:-50px;
+left: calc(50% -50px);
+
+}
+h1{
+
+ margin:0;
+ padding:0 0 20px;
+ text-align:center;
+ font-size:22px;
+color:yellow;
+
+}
+.logininbox p{
+  margin:0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+  line-height: 2rem;
+}
+.logininbox input{
+width:100%;
+margin-bottom:20px;
+height:2rem;
+
+}
+.logininbox input[type="text"]
+{
+border:none;
+border-bottom: 1px solid #fff;
+background:transparent;
+outline:none;
+height: 40px;
+color: white;
+font-size:16px;
+
+
+}
+
+.logininbox input[type="submit"]
+{
+border:none;
+outline: none;
+height:50px;
+font-size: 18px;
+border-radius: 20px;
+
+cursor: pointer;
+ background: #ffc107;
+ color:black;
+}
+
+form > .anchor{margin:2rem 3rem; color:yellowgreen;}
+</style>
+<body>
+
+<div class="logininbox">
+<img src="https://images.unsplash.com/photo-1526848707818-825332fe55f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbiUyMGljb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="avatar" alt="images">
+<h1>Login</h1>
+<form>
+   <p>username</p>
+   <input type="text"  name="" placeholder="Enter username">
+   <p>paassword</p>
+   <input type="passsword"  name="" placeholder="Enter password">
+<input type="submit" name="" value="Login">
+<a href="#" class="anchor">Lost your pasword ?</A><br>
+
+</form>
+</div>
+</body>
+</html>
+
