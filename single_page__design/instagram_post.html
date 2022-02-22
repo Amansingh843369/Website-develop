@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css" media="all">
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap:wrap ; */
+  align-items: center;
+  font-family: "Poppins";
+  background: black;
+  /* background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN8FU6bR_v6SPiCchErykA9ldNpFAzk01MA&usqp=CAU),no-repeat; */
+}
+
+.container {
+  width: 640px;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.top_bar {
+  width: 100%;
+  height: 75px;
+  padding: 25px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.profile_img img {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile_img span {
+  margin-left: 50px;
+}
+
+.main_img {
+  width: 640px;
+  height: 640px;
+  margin-bottom: 15px;
+}
+
+.main_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.icons .fa {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons .left_side .fa {
+  margin: 0px 3px;
+  color: #010101;
+}
+
+.likeCount p {
+  color: #010101;
+  font-size: 14px;
+}
+
+.content p {
+  padding: 5px 0;
+}
+
+.comments p {
+  font-size: 14px;
+  color: #dbdbdb;
+  padding: 5px 0;
+  padding-bottom: 10px;
+}
+
+.comments_box {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  padding: 8px 16px 8px 0;
+  font-size: 24px;
+}
+
+.input_field {
+  width: 100%;
+}
+
+.input_field input {
+  width: 100%;
+  padding: 10px;
+  border: none !important;
+  outline: none;
+}
+
+.btn button {
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #207be2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.h1-class{
+  display: none;
+  color:black;
+  
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="top_bar">
+            <div class="profile_img">
+                <img src=""
+                    alt="">
+                <span>Aman Singh</span>
+            </div>
+            <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <div class="main_img">
+            <img src="https://images.unsplash.com/photo-1617975251517-b90ff061b52e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGluc3RhZ3JhbSUyMHBvc3QlMjAlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+                alt="">
+        </div>
+        <div class="footer">
+            <div class="icons">
+                <div class="left_side">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </div>
+                <div class="right_side">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="likeCount">
+                <p>12 0054 Likes</p>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis excepturi impedit facere, ad
+                    adipisci, cum veritatis libero ipsam, ex quo quis neque debitis tenetur consequatur?</p>
+            </div>
+            <div class="comments">
+                <p>View All 1008 Comments</p>
+            </div>
+            <div class="comments_box">
+                <div class="icon">😊</div>
+                <div class="input_field">
+                    <input type="text" placeholder="Add a Comments..." id="">
+                </div>
+                <div class="btn"><button>Post</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container  second">
+      <div class="top_bar">
+          <div class="profile_img">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="">
+              <span>Coding BD</span>
+          </div>
+          <i class="fa fa-ellipsis-h"></i>
+      </div>
+      <div class="main_img">
+          <img src="https://media.istockphoto.com/photos/light-bulb-on-yellow-background-picture-id1130786754?k=20&m=1130786754&s=612x612&w=0&h=g-xxO3ackY1ilhD_SgxLKD2WAmlSmzEVlEF8E446tj8="
+              alt="">
+      </div>
+      <div class="footer">
+          <div class="icons">
+              <div class="left_side">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <i class="fa fa-comment-o" aria-hidden="true"></i>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              </div>
+              <div class="right_side">
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+              </div>
+          </div>
+          <div class="likeCount">
+              <p>10,890 Likes</p>
+          </div>
+          <div class="content  contnt">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis excepturi impedit facere, ad
+                  adipisci, cum veritatis libero ipsam, ex quo quis neque debitis tenetur consequatur?</p>
+          </div>
+          <div class="comments">
+              <p>View All 1008 Comments</p>
+          </div>
+          <div class="comments_box">
+              <div class="icon">😊</div>
+              <div class="input_field">
+                  <input type="text" placeholder="Add a Comments..." id="place">
+              </div>
+              <div class="btn btnn"><button>Post</button></div>
+          </div>
+      </div>
+  </div>
+
+
+<script>
+
+// var a = document.getElementById('place_comment');
+// a.style.color="red";
+
+// var  b =document.getElementsByClassName("content");
+// b.TextContent="hellewofof";
+
+// b.appenchild(a);
+
+// console.log(a);
+// // console.log(b);
+
+var aman =document.querySelector("placeholder");
+var am =document.querySelector(".btnn").style.background="red";
+am.addEventListener('click', function(event){
+   console.log('Button Clicked');
+let main =document.querySelector(".contnt");
+   main.appenchild(am);
+});
+main.append(aman);
+// main.append(am);
+
+
+
+
+console.log(aman)
+
+// let main =document.querySelector(".contnt");
+// main.appendChild(logic);
+
+
+
+
+// });
+</script>
+</body>
+
+</html>
